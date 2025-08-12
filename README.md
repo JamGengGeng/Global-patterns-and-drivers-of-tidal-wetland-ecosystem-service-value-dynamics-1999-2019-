@@ -9,3 +9,5 @@ Related code and data attachments of the article
 “XGBoost.R” performs hyperparameter tuning and cross-validated training of an XGBoost regression model on spatial and environmental predictor data using the caret framework.
 
 “SHAP.R” calculates SHAP values for a trained XGBoost model to interpret the importance and contribution of each predictor variable in the model’s predictions. This R script exports both the global feature importances and the individual sample-level SHAP values for further analysis.
+
+"FigureData.xlsx" file is used to store the data required for drawing figures in the paper.
