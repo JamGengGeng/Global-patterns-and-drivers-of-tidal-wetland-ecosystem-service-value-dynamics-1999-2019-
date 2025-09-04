@@ -25,12 +25,12 @@ typ_list = [
     ]
 
 file_list = [
+    'South_East_Asia_4.tif',
+    'South_East_Asia_7.tif',
     'South_East_Asia_10.tif',
     'South_East_Asia_13.tif',
     'South_East_Asia_16.tif',
     'South_East_Asia_19.tif',
-    'South_East_Asia_4.tif',
-    'South_East_Asia_7.tif',
     'South_East_Asia_sum.tif'
 ]
 
@@ -54,7 +54,7 @@ try:
                 break
         
         if all_csv_exist:
-            print(f"⚠️ skip {typ}")
+            print(f"skip {typ}")
             continue
 
         csv_file = os.path.join(csv_folder, f"{typ}_South_East_Asia.csv")
@@ -216,3 +216,4 @@ finally:
     arcpy.CheckInExtension("Spatial")
 
 print("finished!")
+
