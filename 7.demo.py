@@ -28,15 +28,15 @@ OUTPUT_ROOT = Path("/results/demonstration")
 FINAL_OUTPUT_ROOT = OUTPUT_ROOT / "final_outputs"
 
 INPUT_TIF = Path("/data/demonstration/netgain_North_American_04.tif")
-POINTS_CSV = INPUT_ROOT / "SOC_1m_North_American.csv"
+POINTS_CSV = INPUT_ROOT / "SOC_North_American.csv"
 SCALE_XLSX = INPUT_ROOT / "SOC-AE-S1_factors.xlsx"
 
 OUTPUT_TIF = Path("/results/demonstration/netgain_North_American_04_bbox_29N30N_92W30W.tif")
-FILLED_CSV = OUTPUT_ROOT / "netgain_North_American_04_bbox_29N30N_92W30W_SOC_1m_filled.csv"
-SCALED_CSV = OUTPUT_ROOT / "netgain_North_American_04_bbox_29N30N_92W30W_SOC_1m_filled_scaled_S1.csv"
+FILLED_CSV = OUTPUT_ROOT / "netgain_North_American_04_bbox_29N30N_92W30W_SOC_filled.csv"
+SCALED_CSV = OUTPUT_ROOT / "netgain_North_American_04_bbox_29N30N_92W30W_SOC_filled_scaled_S1.csv"
 FINAL_CSV = (
     FINAL_OUTPUT_ROOT
-    / "SOC_1m_North_American_bbox_29N30N_92W30W_final_total_STRICT_CLEARLOSS.csv"
+    / "SOC_North_American_bbox_29N30N_92W30W_final_total_STRICT_CLEARLOSS.csv"
 )
 
 # 1) Demo parameters
@@ -51,7 +51,7 @@ EARTH_RADIUS_KM = 6371.0088
 EPS = 1e-9
 
 REGION = "North_American"
-GENRE = "SOC_1m"
+GENRE = "SOC"
 BBOX_TAG = "bbox_29N30N_92W30W"
 YEARS = ["04"]
 
